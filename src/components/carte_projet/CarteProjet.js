@@ -10,7 +10,7 @@ function CarteProjet() {
       </div>
       <div className="bouton_desc">
         <div className="description">
-          <h3 className="desc">{projet[0]?.detail}</h3>
+          <h3 className="desc"></h3>
         </div>
         <div>
           <button className="btn2">voir plus</button>
