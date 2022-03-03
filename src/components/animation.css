@@ -1,0 +1,37 @@
+/* @keyframes anim {
+  from {
+    margin-top: 90%;
+    width: 100%;
+    margin-left: 100%;
+  }
+
+  to {
+    width: 2000%;
+  }
+}
+
+@keyframes anim-G {
+  from {
+    width: 10%;
+    padding-top: 170vh;
+    margin-left: 50%;
+  }
+
+  to {
+    margin-right: 10%;
+    width: 100%;
+  }
+}
+
+@keyframes icone {
+  from {
+    margin-left: 500%;
+    margin-bottom: 500%;
+    margin-top: 1000%;
+  }
+
+  to {
+    width: 100%;
+    margin-left: 38.3vw;
+  }
+} */

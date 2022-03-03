@@ -1,0 +1,66 @@
+.footer {
+  margin-top: 10.3vh;
+  background-image: url(https://media.istockphoto.com/photos/dark-blue-web-site-header-or-footer-background-picture-id981771420?k=20&m=981771420&s=170667a&w=0&h=MJ0ptd8BoG9nS96P0C3YWRWILWDyGdZl1E9gWcLcKO8=);
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.git {
+  width: 80px;
+  height: 80px;
+  border-radius: 20%;
+  object-fit: cover;
+}
+
+.linkedin {
+  width: 80px;
+  height: 80px;
+  border-radius: 20%;
+  margin-left: 10vh;
+  margin-right: 10vh;
+  object-fit: cover;
+}
+
+.snap {
+  width: 80px;
+  height: 80px;
+  border-radius: 20%;
+  object-fit: cover;
+}
+.ico {
+  animation-duration: 5s;
+  animation-name: icone;
+  animation-iteration-count: 1;
+  margin-right: 1vh;
+}
+
+@media (min-height: 970px) {
+  .footer {
+    margin-top: 5vh;
+  }
+  .ico {
+    margin-right: 0vh;
+  }
+}
+
+@media (max-width: 428px) {
+  .footer {
+    margin-top: 8.8vh;
+  }
+  .git {
+    width: 50px;
+    height: 50px;
+  }
+
+  .linkedin {
+    width: 50px;
+    height: 50px;
+  }
+
+  .snap {
+    width: 50px;
+    height: 50px;
+  }
+}

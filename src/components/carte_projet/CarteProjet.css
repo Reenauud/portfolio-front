@@ -1,0 +1,145 @@
+.carte {
+  display: flex;
+  align-items: center;
+  height: 45vh;
+  border-radius: 50px 1px 50px 1px;
+  margin-left: 3vh;
+  margin-right: 3vh;
+  margin-top: 3vh;
+  justify-content: center;
+  box-shadow: blue 1px 1px 15px 7px;
+}
+.image {
+  width: 40%;
+  margin-left: 1vh;
+  margin-top: 1vh;
+  margin-bottom: 1vh;
+  height: 90%;
+  border-radius: 50px 1px 50px 1px;
+  box-shadow: blue 1px 1px 15px 7px;
+  margin-right: 5vh;
+}
+
+.description {
+  width: 100%;
+  margin-left: 1vh;
+  margin-top: 1vh;
+  margin-bottom: 1vh;
+  height: 95%;
+  border-radius: 50px 1px 50px 1px;
+
+  box-shadow: blue 1px 1px 15px 7px;
+  background-color: rgba(0, 0, 0, 0.616);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bouton_desc {
+  display: block;
+  width: 40%;
+  height: 80%;
+  margin-bottom: 9vh;
+  margin-right: 6vh;
+}
+
+.btn2 {
+  display: flex;
+  margin-left: 45%;
+  margin-top: 3vh;
+  height: 4vh;
+  width: 5vw;
+  align-items: center;
+  justify-content: center;
+  border-radius: 150vh;
+  box-shadow: blue 1px 1px 15px 7px;
+  background-color: rgba(0, 0, 0, 0.589);
+  color: white;
+}
+.btn3 {
+  display: flex;
+  margin-left: 45%;
+  margin-top: 3vh;
+  height: 4vh;
+  width: 5vw;
+  align-items: center;
+  justify-content: center;
+  border-radius: 150vh;
+  box-shadow: blue 1px 1px 15px 7px;
+  background-color: rgba(0, 0, 0, 0.589);
+  color: white;
+}
+
+.img3 {
+  display: flex;
+  object-fit: cover;
+  width: 100%;
+  border-radius: 50px 1px 50px 1px;
+  height: 100%;
+}
+
+.carte2 {
+  display: flex;
+  align-items: center;
+  height: 45vh;
+  border-radius: 50px 1px 50px 1px;
+  margin-left: 3vh;
+  margin-right: 3vh;
+  margin-top: 3vh;
+  justify-content: center;
+  box-shadow: blue 1px 1px 15px 7px;
+}
+
+.desc {
+  color: white;
+  margin-left: 1vh;
+  margin-right: 1vh;
+}
+
+@media (max-width: 428px) {
+  .carte {
+    display: block;
+    height: 50vh;
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+  }
+  .image {
+    width: 95%;
+    height: 50%;
+  }
+  .desc {
+    color: white;
+    margin-left: 3vh;
+    margin-right: 1vh;
+    font-size: smaller;
+  }
+  .bouton_desc {
+    display: block;
+    width: 97%;
+    height: 30%;
+    margin-bottom: 2.5vh;
+  }
+  .btn2 {
+    display: flex;
+    margin-left: 40%;
+    margin-top: 2vh;
+    height: 4vh;
+    width: 20vw;
+  }
+  .btn3 {
+    display: flex;
+    margin-left: 40%;
+    height: 4vh;
+    width: 20vw;
+  }
+  .description {
+    width: 98%;
+    margin-top: 3vh;
+  }
+  .carte2 {
+    height: 50vh;
+    display: block;
+  }
+  .img3 {
+    margin-top: 9vh;
+  }
+}

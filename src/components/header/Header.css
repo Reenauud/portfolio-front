@@ -1,0 +1,45 @@
+.head {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1.5vh;
+  animation-duration: 3s;
+  animation-name: anim-G;
+  animation-iteration-count: 1;
+}
+.nom {
+  margin-left: 2vh;
+  color: white;
+  margin-right: 2vh;
+  font-size: 20px;
+}
+
+.cv {
+  margin-right: 2vh;
+  color: white;
+  margin-left: 2vh;
+  font-size: 20px;
+}
+
+.nom_style {
+  border-radius: 1px 100px 100px 1px;
+  height: 4vh;
+  display: flex;
+  align-items: center;
+  box-shadow: blue 1px 1px 15px 7px;
+}
+.cv_style {
+  border-radius: 100px 1px 1px 100px;
+  height: 4vh;
+  display: flex;
+  align-items: center;
+  box-shadow: blue 1px 1px 15px 7px;
+}
+
+@media (max-width: 428px) {
+  .nom_style {
+    margin-top: 3vh;
+  }
+  .cv_style {
+    margin-top: 3vh;
+  }
+}

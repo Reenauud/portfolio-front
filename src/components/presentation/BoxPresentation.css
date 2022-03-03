@@ -1,0 +1,45 @@
+.box_pres {
+  margin-right: 5vh;
+  margin-left: 110vh;
+  background-color: rgba(0, 0, 0, 0.699);
+  border-radius: 15px 0px 15px 0px;
+  box-shadow: blue 1px 1px 15px 7px;
+  display: flex;
+  margin-top: -46vh;
+  animation-duration: 3s;
+  animation-name: anim;
+  animation-iteration-count: 1;
+  width: 40%;
+}
+
+.pres {
+  color: white;
+  margin-left: 2vh;
+  margin-right: 2vh;
+  font-size: 25px;
+  margin-top: 1vh;
+}
+
+@media (min-height: 970px) {
+  .box_pres {
+    margin-top: -25%;
+    margin-left: 95vh;
+  }
+}
+
+@media (max-width: 428px) {
+  .box_pres {
+    margin-left: 2.2vh;
+    margin-top: 13%;
+    width: 95%;
+    height: 8vh;
+    align-items: center;
+    justify-content: center;
+  }
+  .pres {
+    color: rgb(255, 255, 255);
+    margin-left: 2vh;
+    margin-right: 2vh;
+    font-size: 12px;
+  }
+}
