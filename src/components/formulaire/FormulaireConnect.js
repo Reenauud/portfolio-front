@@ -23,6 +23,7 @@ function FormulaireConnect({ setUserco }) {
         );
         console.log(response);
         if (response.status === 200) {
+          setUserco(response.data.id);
           navigate("/admin");
         }
       } catch (err) {
