@@ -20,6 +20,7 @@ function App() {
           setUserco(response.data.id);
         })
         .catch((err) => console.log(err.message));
+      return console.log(userco);
     })();
   }, [userco]);
   return (

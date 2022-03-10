@@ -1,12 +1,14 @@
-import React from "react";
-import Admin from "../components/Admin/Admin";
+import FonctionAdmin from "../components/Admin/FonctionAdmin";
 import FormulaireAdd from "../components/formulaire/FormulaireAdd";
+import React, { useState } from "react";
 
 function AdminPage() {
+  const [projet, setProjet] = useState(null);
+
   return (
     <div>
-      <Admin />
-      <FormulaireAdd />
+      <FonctionAdmin projet={projet} setProjet={setProjet} />
+      <FormulaireAdd projet={projet} setProjet={setProjet} />
     </div>
   );
 }

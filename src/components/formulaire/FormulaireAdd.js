@@ -1,7 +1,7 @@
 import axios from "axios";
 import React, { useState } from "react";
 
-function FormulaireAdd() {
+function FormulaireAdd({ projet, setProjet }) {
   const [title, setTitle] = useState("");
   const [detail, setDetail] = useState("");
   const [lien, setLien] = useState("");
@@ -30,19 +30,23 @@ function FormulaireAdd() {
         <input
           type="text"
           placeholder="titre"
-          value={title}
-          onChange={(e) => setTitle(e.target.value)}
+          value={projet ? projet.title : title}
+          onChange={
+            projet
+              ? (e) => setProjet({ ...projet, title: e.target.value })
+              : (e) => setTitle(e.target.value)
+          }
         />
         <input
           type="text"
           placeholder="details"
-          value={detail}
+          value={projet ? projet.detail : detail}
           onChange={(e) => setDetail(e.target.value)}
         />
         <input
           type="text"
           placeholder="lien"
-          value={lien}
+          value={projet ? projet.lien : lien}
           onChange={(e) => setLien(e.target.value)}
         />
         <input type="file" placeholder="image" onChange={handleFile} />

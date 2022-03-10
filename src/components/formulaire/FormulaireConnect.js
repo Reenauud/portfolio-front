@@ -27,7 +27,7 @@ function FormulaireConnect({ setUserco }) {
           navigate("/admin");
         }
       } catch (err) {
-        alert("Error");
+        alert(err.message);
       }
     } else {
       alert("renseigner une valeur");
