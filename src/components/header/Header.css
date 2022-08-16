@@ -10,14 +10,14 @@
   margin-left: 2vh;
   color: white;
   margin-right: 2vh;
-  font-size: 20px;
+  font-size: 15px;
 }
 
 .cv {
   margin-right: 2vh;
   color: white;
   margin-left: 2vh;
-  font-size: 20px;
+  font-size: 15px;
 }
 
 .nom_style {
@@ -26,6 +26,7 @@
   display: flex;
   align-items: center;
   box-shadow: blue 1px 1px 15px 7px;
+  animation: text-blur-out 2s ease-in-out reverse both;
 }
 .cv_style {
   border-radius: 100px 1px 1px 100px;
@@ -33,13 +34,11 @@
   display: flex;
   align-items: center;
   box-shadow: blue 1px 1px 15px 7px;
+  animation: text-blur-out 2s ease-in-out reverse both;
 }
 
-@media (max-width: 428px) {
-  .nom_style {
-    margin-top: 3vh;
-  }
-  .cv_style {
-    margin-top: 3vh;
-  }
+a {
+  color: white;
+  text-decoration: none;
+  margin: 2vh;
 }

@@ -1,6 +1,6 @@
 .bouton {
   display: flex;
-  margin-top: 16%;
+  /* margin-top: 16%; */
   z-index: 15;
   justify-content: center;
   width: 6vw;
@@ -11,7 +11,8 @@
   color: white;
   box-shadow: blue 1px 1px 15px 7px;
   cursor: pointer;
-  margin-left: 31vh;
+  /* margin-left: 31vh; */
+  animation: text-blur-out 2s ease-in-out reverse both;
 }
 
 .placement_btn {
@@ -27,22 +28,27 @@
   margin-left: -2vh;
 }
 
-@media (min-height: 970px) {
+@media (min-width: 970px) {
   .bouton {
     margin-right: 20.5%;
     margin-top: 13%;
   }
   .placement_btn {
-    margin-left: 7.7%;
+    margin-left: 5.5%;
     margin-top: -1.2vh;
     margin-bottom: 25.5vh;
   }
+  .icone {
+    border-radius: 10px;
+    display: flex;
+    justify-content: flex-end;
+    margin: 0% 5% -2% 15%;
+  }
 }
 
-@media (max-width: 428px) {
+@media (max-width: 810px) {
   .placement_btn {
-    margin-left: 44.9vw;
-    margin-top: 1.5vh;
+    margin-left: 42.7%;
   }
   .bouton {
     box-shadow: blue 1px 1px 15px 7px;
@@ -52,7 +58,7 @@
     cursor: pointer;
     width: 30vw;
     height: 5vh;
-    margin-top: 29.5vh;
+    margin-top: 20vh;
     background-color: rgba(0, 0, 0, 0.479);
     border-color: blue;
     margin-left: -70.5vw;

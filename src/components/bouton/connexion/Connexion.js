@@ -1,9 +1,16 @@
 import React from "react";
+import "./Connexion.css";
+import { NavLink } from "react-router-dom";
 
 function Connexion() {
+  const handleClick = () => {
+    <NavLink to={"/connect"}></NavLink>;
+  };
   return (
-    <div>
-      <button>connexion</button>
+    <div className="plcmCo">
+      <button className="btnconnexion" onClick={handleClick}>
+        connexion
+      </button>
     </div>
   );
 }

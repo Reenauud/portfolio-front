@@ -9,20 +9,27 @@
   margin-top: 5.8vh;
   box-shadow: #0005e4 1px 1px 15px 7px;
   border-radius: 40px 40px 40px 40px;
+  animation: anim-G;
+}
+
+form {
+  flex-direction: column;
+  align-items: center;
 }
 
 input {
-  width: 56%;
-  height: 5vh;
+  /* width: 56%;
+  height: 5vh; */
   margin-top: 2vh;
   border-radius: 19vh;
-  box-shadow: #0005e4 1px 1px 15px 7px;
+  /* box-shadow: #0005e4 1px 1px 15px 7px; */
 }
 
 .placement {
   width: 100%;
   display: flex;
   justify-content: center;
+  animation: scale-in-hor-center 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
 .text_contact {
@@ -58,6 +65,15 @@ input {
   }
 }
 
+@media (min-width: 970px) {
+  .placement {
+    margin-top: -14vh;
+  }
+  .formsubmit {
+    width: 10%;
+  }
+}
+
 @media (max-width: 428px) {
   .allinput {
     width: 90%;
@@ -78,4 +94,17 @@ input {
 }
 .comment {
   text-align: center;
+}
+
+@keyframes scale-in-hor-center {
+  0% {
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+    opacity: 1;
+  }
 }

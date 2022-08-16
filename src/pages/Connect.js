@@ -1,10 +1,10 @@
 import React from "react";
 import FormulaireConnect from "../components/formulaire/FormulaireConnect";
 
-function Auth({ setUserco }) {
+function Auth() {
   return (
-    <div>
-      <FormulaireConnect setUserco={setUserco} />
+    <div className="push-footer">
+      <FormulaireConnect />
     </div>
   );
 }

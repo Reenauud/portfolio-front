@@ -1,0 +1,59 @@
+.formProjet {
+  background-color: grey;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 2vh 0 2vh;
+  border-radius: 3vh;
+  box-shadow: 0 0 2vh 0;
+  width: 28%;
+  height: fit-content;
+}
+
+@media screen and (max-width: 970px) {
+  .formProjet {
+    width: 80%;
+  }
+}
+
+.inputProjet {
+  width: 60%;
+  margin-top: 3vh;
+  height: 1%;
+  text-align: center;
+}
+
+.submitProjet {
+  margin: 2vh 0 2vh 0;
+  border-radius: 3vh;
+  border-color: blue;
+  width: 20%;
+  height: 20%;
+  box-shadow: blue 1px 1px 15px 7px;
+}
+
+/* .parentDiv {
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+} */
+
+.uploadImg {
+  border-radius: 0vh;
+  color: #000;
+  border-radius: 10px;
+  margin-top: 2vh;
+  border-radius: 0vh;
+}
+
+.boxBtnAdmin {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.ContainerForm {
+  display: flex;
+  justify-content: center;
+}

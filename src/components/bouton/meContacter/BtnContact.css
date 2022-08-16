@@ -5,10 +5,10 @@
   color: white;
   width: 8vw;
   height: 5vh;
+  margin-top: 1vh;
   border-color: black;
-  margin-top: -10vh;
   cursor: pointer;
-  margin-left: 92vw;
+  animation: text-blur-out 2s ease-in-out reverse both;
 }
 
 .a {
@@ -16,20 +16,24 @@
   width: 0px;
 }
 
-@media (max-width: 428px) {
+@media (max-width: 810px) {
   .btnContact {
-    width: 30vw;
+    width: 26vw;
     height: 5vh;
-    z-index: 10000;
-    margin-top: -15vh;
-    margin-left: 69.7vw;
+    z-index: 1;
+    margin-top: 10vh;
     background-color: rgba(0, 0, 0, 0.767);
     border-color: blue;
   }
 }
 
-@media (min-height: 970px) {
+@media (min-width: 970px) {
   .btnContact {
-    margin-left: 163.4vh;
+    height: 5vh;
+    z-index: 1;
+    margin-top: 10vh;
+    margin-left: 37vh;
+    background-color: rgba(0, 0, 0, 0.767);
+    border-color: blue;
   }
 }

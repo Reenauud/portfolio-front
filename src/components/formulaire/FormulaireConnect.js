@@ -1,8 +1,13 @@
 import React, { useState } from "react";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
+import "./FormulaireConnect.css";
+import { toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
-function FormulaireConnect({ setUserco }) {
+// const msgErrorConnect = toast.error("Email ou mot de passe incorrect !");
+
+function FormulaireConnect() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const navigate = useNavigate();
@@ -21,24 +26,27 @@ function FormulaireConnect({ setUserco }) {
             withCredentials: true,
           }
         );
-        console.log(response);
+
         if (response.status === 200) {
-          setUserco(response.data.id);
           navigate("/admin");
+          // const msgConnect = toast.success("Vous êtes connecté !");
+          // msgConnect();
+          toast.success("Vous êtes connecté !");
         }
       } catch (err) {
-        alert(err.message);
+        toast.error("Email ou mot de passe incorrect !");
       }
     } else {
-      alert("renseigner une valeur");
+      toast.error("Veuillez remplir tous les champs !");
     }
   };
   return (
-    <div>
-      <form onSubmit={onSubmit}>
+    <div className="ContainerFormCo">
+      <form onSubmit={onSubmit} className="formulairedeco">
         <input
           type="text"
           placeholder="Email"
+          className=" inputCo"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
         ></input>
@@ -46,11 +54,12 @@ function FormulaireConnect({ setUserco }) {
         <input
           type="password"
           placeholder="password"
+          className=" inputCo"
           value={password}
           onChange={(e) => setPassword(e.target.value)}
         ></input>
 
-        <input type="submit"></input>
+        <input type="submit" className="subbutton"></input>
       </form>
     </div>
   );

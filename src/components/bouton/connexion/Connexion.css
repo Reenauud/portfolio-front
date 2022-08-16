@@ -1,0 +1,18 @@
+.btnconnexion {
+  box-shadow: blue 1px 1px 15px 7px;
+  border-radius: 100px 100px 100px 100px;
+  color: white;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.479);
+  border-color: blue;
+}
+
+.plcmCo {
+  margin-top: 7vh;
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+}

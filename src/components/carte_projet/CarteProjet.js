@@ -1,4 +1,5 @@
-import { useEffect } from "react";
+import React from "react";
+import { NavLink } from "react-router-dom";
 import "./CarteProjet.css";
 
 function CarteProjet({ projet, index }) {
@@ -18,7 +19,12 @@ function CarteProjet({ projet, index }) {
           <h3 className="desc">{projet.detail}</h3>
         </div>
         <div>
-          <button className="btn2">voir plus</button>
+          <button className="btn2">
+            <a href={`${projet.lien}`} target="_blank">
+              {" "}
+              en savoir plus{" "}
+            </a>
+          </button>
         </div>
       </div>
     </div>

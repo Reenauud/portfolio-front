@@ -1,9 +1,16 @@
 import React, { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 import CarteProjet from "../components/carte_projet/CarteProjet";
 import axios from "axios";
-
+import { IoIosHome } from "react-icons/io";
+import "./Projets.css";
 function Projets() {
   const [projet, setProjet] = useState([]);
+  const navigate = useNavigate();
+
+  const handleClick = () => {
+    navigate("/");
+  };
 
   useEffect(() => {
     axios
@@ -16,8 +23,12 @@ function Projets() {
 
   return (
     <div>
-      {projet.map((projet, index) => {
-        return <CarteProjet projet={projet} index={index} />;
+      <div className="icone">
+        <IoIosHome className="backicone" onClick={handleClick} />
+      </div>
+
+      {projet.map((projet, index, key) => {
+        return <CarteProjet projet={projet} index={index} key={projet.id} />;
       })}
     </div>
   );

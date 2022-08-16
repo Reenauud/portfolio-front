@@ -1,5 +1,6 @@
 import axios from "axios";
 import React, { useState, useEffect } from "react";
+import "./Select.css";
 
 function Select({ setProjet }) {
   const [projets, setProjets] = useState();
@@ -11,12 +12,17 @@ function Select({ setProjet }) {
   }, []);
 
   return (
-    <select onChange={(e) => setProjet(JSON.parse(e.target.value))}>
+    <select
+      onChange={(e) => setProjet(JSON.parse(e.target.value))}
+      className="selectBtn"
+    >
       <option default="selected" value="">
-        select projects
+        selectionne un projet
       </option>
       {projets?.map((projet) => (
-        <option value={JSON.stringify(projet)}>{projet.title}</option>
+        <option key={projet.id} value={JSON.stringify(projet)}>
+          {projet.title}
+        </option>
       ))}
     </select>
   );

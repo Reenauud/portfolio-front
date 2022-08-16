@@ -1,22 +1,36 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Footer.css";
+import { BsGithub, BsLinkedin } from "react-icons/bs";
+import { FaSnapchat } from "react-icons/fa";
+import Modal from "../Modal/Modal";
 
 function Footer() {
+  const [click, setClick] = useState(false);
+
+  const handleClick = () => {
+    setClick(!click);
+  };
   return (
-    <div className="footer">
-      <div className="ico">
-        <img
-          className="git"
-          src="https://www.lebigdata.fr/wp-content/uploads/2021/03/DataLab_-_Chapitre_0_-_Fabriquer_sa_station_de_mesure_connect_e_github-logo-640x320-1.png"
-        ></img>
-        <img
-          className="linkedin"
-          src="https://blog.hubspot.fr/hubfs/media/linkedin.jpeg"
-        ></img>
-        <img
-          className="snap"
-          src="https://support-tools.storage.googleapis.com/Team-Snapchat-Snapcode-981935546.png"
-        ></img>
+    <div>
+      {click ? <Modal /> : null}
+      <div className="footer">
+        <div className="ico">
+          <a
+            href="https://github.com/Reenauud"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <BsGithub className="git" />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/renaud-raymond-980114223/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <BsLinkedin className="linkedin" />
+          </a>
+          <FaSnapchat className="snap" onClick={handleClick} />
+        </div>
       </div>
     </div>
   );

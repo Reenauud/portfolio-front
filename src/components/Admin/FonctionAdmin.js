@@ -1,13 +1,11 @@
 import Select from "../bouton/admin/Select";
-import Delete from "../bouton/admin/Delete";
-import Modify from "../bouton/admin/Modify";
+
+import "../Admin/FonctionAdmin.css";
 
 function FonctionAdmin({ projet, setProjet }) {
   return (
-    <div>
+    <div className="fonctionAdmin">
       <Select setProjet={setProjet} />
-      <Delete projetId={projet?.id} />
-      <Modify projetId={projet?.id} projet={projet} />
     </div>
   );
 }
