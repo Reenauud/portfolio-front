@@ -35,6 +35,7 @@
   align-items: center;
   box-shadow: blue 1px 1px 15px 7px;
   animation: text-blur-out 2s ease-in-out reverse both;
+  background-color: black;
 }
 
 a {

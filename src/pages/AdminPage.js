@@ -38,7 +38,7 @@ function AdminPage() {
         <IoIosHome className="backicone" onClick={handleClick} />
       </div>
       <div className="titre">
-        <h1> bienvenue sur la page Administrateur</h1>
+        <h1> Bienvenue sur la page Administrateur</h1>
       </div>
       <FonctionAdmin projet={projet} setProjet={setProjet} />
       <FormulaireAdd projet={projet} setProjet={setProjet} />

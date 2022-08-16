@@ -18,7 +18,7 @@ function CarteProjet({ projet, index }) {
         <div className="description">
           <h3 className="desc">{projet.detail}</h3>
         </div>
-        <div>
+        <div className="ContainerBtn2">
           <button className="btn2">
             <a href={`${projet.lien}`} target="_blank">
               {" "}
